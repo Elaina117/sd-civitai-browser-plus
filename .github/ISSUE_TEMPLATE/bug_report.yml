@@ -41,7 +41,7 @@ body:
       value: |
         * Extension version:
         * OS:
-        * SD-WebUI version:
+        * SD-WUI version:
         * Python:
     validations:
       required: true

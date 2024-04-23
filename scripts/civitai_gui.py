@@ -1179,7 +1179,7 @@ def on_ui_settings():
             "Combine LoCon, LORA & DoRA as one option",
             section=browser,
             **({'category_id': cat_id} if ver_bool else {})
-        ).info("LoCon requires SD-WebUI v1.5 or higher,  DoRA requires v1.9 or higher")
+        ).info("LoCon requires SD-WUI v1.5 or higher,  DoRA requires v1.9 or higher")
     )
 
     shared.opts.add_option(
