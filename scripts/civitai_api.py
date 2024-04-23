@@ -63,7 +63,7 @@ def contenttype_folder(content_type, desc=None, fromCheck=False, custom_folder=N
         
     elif content_type == "AestheticGradient":
         if not custom_folder:
-            folder = os.path.join(extensions_dir, "stable-diffusion-webui-aesthetic-gradients", "aesthetic_embeddings")
+            folder = os.path.join(extensions_dir, "stable-diffusion-wui-aesthetic-gradients", "aesthetic_embeddings")
         else:
             folder = os.path.join(custom_folder, "aesthetic_embeddings")
     elif content_type == "LORA":
@@ -126,7 +126,7 @@ def contenttype_folder(content_type, desc=None, fromCheck=False, custom_folder=N
                 folder = os.path.join(main_models, "ESRGAN")
             
     elif content_type == "MotionModule":
-        folder = os.path.join(extensions_dir, "sd-webui-animatediff", "model")
+        folder = os.path.join(extensions_dir, "sd-wui-animatediff", "model")
         
     elif content_type == "Workflows":
         folder = os.path.join(main_models, "Workflows")
