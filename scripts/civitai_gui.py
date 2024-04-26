@@ -28,7 +28,7 @@ except ImportError:
 
 if not forge:
     try:
-        #from packaging import version
+        from packaging import version
         from pydpkg import Dpkg
         ver = git_tag()
 
