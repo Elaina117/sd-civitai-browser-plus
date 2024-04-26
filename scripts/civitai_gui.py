@@ -40,7 +40,7 @@ if not forge:
                 ver_bool = False
         if ver:
             ver = ver.split('-')[0].rsplit('-', 1)[0]
-            #ver_bool = version.parse(ver[0:]) >= version.parse("1.7")
+            ver_bool = "1.7"#version.parse(ver[0:]) >= version.parse("1.7")
             #ver_bool = Dpkg.compare_versions(ver[0:], "1.7") > 0
     except ImportError:
         print("Python module 'packaging' has not been imported correctly, please try to restart or install it manually.")
