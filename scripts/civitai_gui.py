@@ -29,7 +29,7 @@ except ImportError:
 if not forge:
     try:
         from packaging import version
-        from pydpkg import Dpkg
+        #from pydpkg import Dpkg
         ver = git_tag()
 
         if not ver:
@@ -41,7 +41,7 @@ if not forge:
         if ver:
             ver = ver.split('-')[0].rsplit('-', 1)[0]
             #ver_bool = version.parse(ver[0:]) >= version.parse("1.7")
-            ver_bool = Dpkg.compare_versions(ver[0:], "1.7") > 0
+            #ver_bool = Dpkg.compare_versions(ver[0:], "1.7") > 0
     except ImportError:
         print("Python module 'packaging' has not been imported correctly, please try to restart or install it manually.")
         ver_bool = False
